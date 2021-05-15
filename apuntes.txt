@@ -1,0 +1,41 @@
+npm init -y => Preconfigura el proyecto y crea el archivo package.json
+Luego se crea las carpetas y los archivos index.js y index.html
+
+Instalando babel
+
+npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+
+Luego se hace la configuracion de babel en el archivo .babelrc
+
+- Instalaremos webpack y configurarems para mandarloa produccion
+
+npm install webpack webpack-cli html-webpack-plugin html-loader --save-dev
+
+luego configurar webpack
+
+Luego en package.json tenemos que configurar el script para compilar el proyecto
+
+- compilamos el proyecto con esto: npm run build
+ - Se crea el archivo dist con dos archivos principales
+ bundle.js e index.html
+
+ - Instalamos otro paquete de webpack: npm install webpack-dev-server --save-dev
+- Crear otro script para correr el proyecto: start
+ Y el el terminal npm run start
+
+ SASS
+ Permite extraer lode scss a un archivo css o sea parecido a Watch Sass
+ - npm install mini-css-extract-plugin css-loader node-sass sass-loader --save-dev
+
+ Luego en configuración de webpack agregamos reglas para identificar los archivos css
+
+ luego se debería instalar esto:
+  npm install eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y
+
+  https://gist.github.com/gndx/60ae8b1807263e3a55f790ed17c4c57a
+  De ese link copiamos todo y crear el archivo .eslintrc
+
+  ojo: npx gitignore```
+Y asi les creara el archivo completo con todos los mudulos que se necesitan ignorar
+
+luego se agrega el archivo .gitignore de este link
