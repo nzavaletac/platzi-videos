@@ -39,3 +39,24 @@ Luego en package.json tenemos que configurar el script para compilar el proyecto
 Y asi les creara el archivo completo con todos los mudulos que se necesitan ignorar
 
 luego se agrega el archivo .gitignore de este link
+https://gist.github.com/gndx/747a8913d12e96ff8374e2125efde544
+
+Luego subimos todos los cambios a github
+con estos pasos
+- git status
+- git add .
+- git commit -m "Eslint
+- git push 
+
+Ahora instalamos un laoder para agregar imagenes
+- npm install file-loader --save-dev
+
+Luego se agrega una nueva regla en el archivo de configuracion de webpack
+
+- Instalar el paquete de server json
+npm install json-server -g 
+
+Luego se incializa: json-server initialState.json Si no se prueba con esto: npx json-server --watch initialState.json
+
+Intalamos un paquete para utilizar protypes en nuestro proyecto 
+ npm i prop-types
